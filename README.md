@@ -1,9 +1,6 @@
 # Wall Calendar React Component
 A polished, interactive wall calendar built with Next.js 14, TypeScript, Tailwind CSS, CSS Modules, and Framer Motion.
 
-![Live Demo](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-0ea5e9?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-111827?style=for-the-badge&logo=github)
-
 ## Features
 - Physical wall-calendar inspired visual design with hero image and spiral rings
 - Date range selector with start/end/in-range/hover preview states
@@ -39,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000
+
 
 ## Component Architecture
 ```text
