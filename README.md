@@ -1,44 +1,43 @@
-# Wall Calendar React Component
+# Wall Calendar Assignment
 
-A polished wall-calendar experience built with Next.js, TypeScript, Tailwind CSS, CSS Modules, and Framer Motion.
+Interactive wall calendar built with Next.js, TypeScript, Tailwind CSS, CSS Modules, and Framer Motion.
 
 ## Overview
 
-This project renders an interactive calendar with month navigation, range selection, notes, holiday markers, theme switching, and motion-driven UI polish. The layout is responsive and adapts from a split desktop view to a stacked mobile presentation.
+This project is a responsive calendar application with month navigation, range selection, notes, holiday markers, keyboard support, and theme switching. It uses motion and image-driven styling to give the interface a physical wall-calendar feel.
 
 ## Features
 
-- Physical wall-calendar inspired design with hero imagery and spiral-ring styling
-- Month navigation with page-flip transitions and hero image cross-fades
-- Date range selection with start, end, in-range, and hover preview states
-- Monthly notes and selected-range notes saved in `localStorage`
-- Autosave debounce to keep note updates lightweight
-- Dynamic accent color extracted from the current hero image
+- Month navigation with 3D page-flip transitions
+- Date range selection with hover preview states
+- Monthly notes and selected-range notes stored in `localStorage`
+- Autosave debounce for note updates
+- Dynamic accent color derived from the active hero image
 - Holiday markers for Indian festivals and national holidays
-- Keyboard navigation with arrow keys, Enter/Space selection, and Escape to clear
+- Keyboard navigation with arrow keys, Enter, Space, and Escape
 - Light and dark theme support with persistence
-- Responsive layout for desktop and mobile
-- Scroll-based entrance animations and subtle parallax effects
+- Responsive desktop and mobile layouts
+- Scroll-triggered entrance animations and subtle parallax
 
 ## Tech Stack
 
-| Category | Tooling |
+| Area | Stack |
 |---|---|
 | Framework | Next.js 14 (App Router) |
 | Language | TypeScript |
-| Styling | Tailwind CSS v3 + CSS Modules |
+| Styling | Tailwind CSS v3, CSS Modules |
 | Animation | Framer Motion v11 |
-| Persistence | `localStorage` |
+| Storage | `localStorage` |
 | Package Manager | npm |
 
-## Getting Started
+## Installation
 
 ### Prerequisites
 
-- Node.js 18 or newer
+- Node.js 18+
 - npm
 
-### Install
+### Setup
 
 ```bash
 git clone <your-repo-url>
@@ -46,7 +45,7 @@ cd <repo-folder>
 npm install
 ```
 
-### Run Locally
+### Development
 
 ```bash
 npm run dev
@@ -54,11 +53,11 @@ npm run dev
 
 Open `http://localhost:3000` in your browser.
 
-## Available Scripts
+## Scripts
 
 - `npm run dev` - Start the development server
-- `npm run build` - Create a production build
-- `npm run start` - Start the production server
+- `npm run build` - Build the application for production
+- `npm run start` - Run the production server
 - `npm run lint` - Run ESLint
 
 ## Project Structure
@@ -95,15 +94,15 @@ types/
   calendar.ts
 ```
 
-## Notes
+## Behavior Notes
 
-- Holiday data is static, so lunar festival dates may not always be year-accurate.
-- Range notes are stored by date-key in `localStorage`.
-- The hero images are loaded from external URLs, so network access is required for the full visual experience.
+- Holiday dates are static and may not always match lunar festival calendars.
+- Notes are keyed by date or range in `localStorage`.
+- Hero imagery comes from external URLs, so network access is required for the full experience.
 
 ## Future Improvements
 
 - Add drag-to-select range support
 - Add unit tests for reducers and date utilities
-- Add locale-specific week start support
+- Add locale-specific week-start settings
 - Add richer metadata for notes and ranges
